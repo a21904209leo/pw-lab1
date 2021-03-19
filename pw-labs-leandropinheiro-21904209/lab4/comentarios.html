@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Leandro Pinheiro">
+        <meta name="keywords" content="Basileia">
+        <meta name="description" content="Website sobre Basiléia">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+        <title>Basiléia</title>
+    </head>
+    <body>
+        <header>
+            <h1>Basiléia</h1>
+            <figure>
+            <img src="images/basileia.jpg"><br>
+            </figure>
+        </header>
+        <nav>
+            <a href=index.html>Introdução</a> | 
+            <a href=local.html>Localização</a> | 
+            <a href=multimedia.html>Multimédia</a> | 
+            <a href=info.html>Informações</a> | 
+            <a href=quizz.html>Quizz</a> | 
+            <b><a href=comentarios.html>Comentários</a></b> | 
+            <a href=html5-css.html>HTML5 e CSS</a> |
+            <a href=../index.html>Home</a>
+        </nav>
+        <main>
+            <section>
+                <h3>Comentários</h3>
+            </section>
+            <section>
+                <fieldset>
+                    <form method="post" action="mailto:leandrompp2001@gmail.com">
+                    
+                        <p>1. De 0 a 20 avalie a clareza do site:<br>
+                        <input type="range" id="C1" name="C1" min="0" max="20" oninput="taxaC1.value = C1.value">
+                        <output name="taxaC1" for="C1">10</output></p><br>
+
+                        <p>2. De 0 a 20 avalie o rigor do site:<br>
+                        <input type="range" id="C2" name="C2" min="0" max="20" oninput="taxaC2.value = C2.value">
+                        <output name="taxaC2" for="C2">10</output></p><br>
+
+                        <p>3. De 0 a 20 avalie a precisão do site:<br>
+                        <input type="range" id="C3" name="C3" min="0" max="20" oninput="taxaC3.value = C3.value">
+                        <output name="taxaC3" for="C3">10</output></p><br>
+
+                        <p>4. De 0 a 20 avalie a factualidade do site:<br>
+                        <input type="range" id="C4" name="C4" min="0" max="20" oninput="taxaC4.value = C4.value">
+                        <output name="taxaC4" for="C4">10</output></p><br>
+
+                        <p>5. De 0 a 20 avalie a significância do site:<br>
+                        <input type="range" id="C5" name="C5" min="0" max="20" oninput="taxaC5.value = C5.value">
+                        <output name="taxaC5" for="C5">10</output></p><br>
+
+                        <p>6. De 0 a 20 avalie a complexidade do site:<br>
+                        <input type="range" id="C6" name="C6" min="0" max="20" oninput="taxaC6.value = C6.value">
+                        <output name="taxaC6" for="C6">10</output></p><br>
+
+                        <p>7. De 0 a 20 avalie a abrangência do site em relação a Basileia:<br>
+                        <input type="range" id="C7" name="C7" min="0" max="20" oninput="taxaC7.value = C7.value">
+                        <output name="taxaC7" for="C7">10</output></p><br>
+
+                        <p>8. De 0 a 20 avalie a originalidade do site:<br>
+                        <input type="range" id="C8" name="C8" min="0" max="20" oninput="taxaC8.value = C8.value">
+                        <output name="taxaC8" for="C8">10</output></p><br>
+
+                        <p>9. Este site foi lhe útil?<br>
+                        <input type="radio" name="opcao" id="sim" value="sim">
+                        <label for="sim">Sim</label><br>
+                        <input type="radio" name="opcao" id="nao" value="nao">
+                        <label for="nao">Não</label><br>
+                        <input type="radio" name="opcao" id="talvez" value="talvez">
+                        <label for="talvez">Talvez</label></p><br>
+
+                        <p>10. Quais foram as páginas que mais gostou?<br>
+                        <input type="checkbox" id="intro" name="intro" value="intro">
+                        <label for="intro">Introdução</label><br>
+                        <input type="checkbox" id="local" name="local" value="local">
+                        <label for="local">Localização</label><br>
+                        <input type="checkbox" id="multimedia" name="multimedia" value="multimedia">
+                        <label for="multimedia">Multimédia</label><br>
+                        <input type="checkbox" id="info" name="info" value="info">
+                        <label for="info">Informações</label><br>
+                        <input type="checkbox" id="quizz" name="quizz" value="quizz">
+                        <label for="quizz">Quizz</label><br>
+                        <input type="checkbox" id="comentarios" name="comentarios" value="comentarios">
+                        <label for="comentarios">Comentários</label></p><br>
+
+                        <p>Sugestões de Melhoria:<br>
+                        <textarea name="mensagem" rows="10" cols="30"></textarea></p>
+
+                        <input type="hidden" id="lab" name="lab" value="lab4"><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </fieldset>
+            </section>
+    
+            <br>
+            <section>
+                <svg height="175" width="500">
+                    <a href=index.html>
+                        <text x="150" y="100" fill="#616161" class="index">
+                            <animate id="a1" attributeName="fill" from="#616161" to="#b8860b" dur="3s" fill="freeze"/>
+                            Introdução</text>
+                    </a>
+                    <a href=local.html>
+                        <text x="100" y="115" fill="#b8860b" class="localemultim">
+                            <animate id="a2" attributeName="fill" from="#b8860b" to="#3cb70b" begin="a1.end" dur="3s" fill="freeze" />
+                            Localização</text>
+                    </a>
+                    <a href=multimedia.html>
+                        <text x="175" y="70" fill="#3cb70b" class="localemultim">
+                            <animate id="a3" attributeName="fill" from="#3cb70b" to="#0b3cb7" begin="a2.end" dur="3s" fill="freeze" />
+                            Multimédia</text>
+                    </a>
+                    <a href=info.html>
+                    <text x="205" y="125" fill="#0b3cb7" class="info">
+                        <animate id="a4" attributeName="fill" from="#0b3cb7" to="#860bb7" begin="a3.end" dur="3s" fill="freeze" />
+                        Informações</text>
+                    </a>
+                    <a href=quizz.html>
+                    <text x="80" y="72" fill="#860bb7" class="quizz">
+                        <animate id="a5" attributeName="fill" from="#860bb7" to="#0bb786" begin="a4.end" dur="3s" fill="freeze" />
+                        Quizz</text>
+                    </a>
+                    <a href=comentarios.html>
+                    <text x="50" y="125" fill="#0bb786" class="big">
+                        <animate id="a6" attributeName="fill" from="#0bb786" to="#300bb7" begin="a5.end" dur="3s" fill="freeze" />
+                        Comentários</text>
+                    </a>
+                    <a href=../index.html>
+                    <text x="340" y="100" fill="#300bb7">
+                        <animate id="a7" attributeName="fill" from="#300bb7" to="#616161" begin="a6.end" dur="3s" fill="freeze" />
+                        Home
+                    </text>
+                    </a>
+                </svg>
+            </section>
+        </main>
+        <footer>
+            <p>Leandro Pinheiro a21904209 Universidade Lusófona de Humanidades e tecnologias 2ºano</p>
+        </footer>
+    </body>
+</html>
