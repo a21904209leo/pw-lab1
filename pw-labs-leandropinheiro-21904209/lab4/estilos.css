@@ -1,0 +1,35 @@
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    background-color:rgb(208, 240, 194);
+}
+
+.index {font: 40px sans-serif; }
+.localemultim {font: 20px sans-serif; }
+.multim {font: 20px sans-serif; }
+.info {font: 30px sans-serif; }
+.quizz {font: 35px sans-serif; }
+
+nav > a:link{
+    color: black;
+}
+
+nav > a:visited{
+    color: blue;
+}
+
+nav > a:hover{
+    color: red;
+}
+
+nav > a:active{
+    color: green;
+}
+
+p::first-letter {
+    color: rgb(26, 3, 3);
+    text-shadow: 1px 1px #f55a5ac5 ;
+    font-size: x-large;
+}
