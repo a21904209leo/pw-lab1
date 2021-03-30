@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Leandro Pinheiro">
+        <meta name="keywords" content="Basileia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website sobre Basiléia">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+        <title>Basiléia</title>
+    </head>
+    <body>
+        <header>
+            <h1>Basiléia</h1>
+            <figure>
+                <img src="images/basileia.jpg"><br>
+            </figure>
+        </header>
+        <nav>
+            <a href=index.html>Introdução</a> | 
+            <a href=local.html>Localização</a> | 
+            <a href=multimedia.html>Multimédia</a> | 
+            <a href=info.html>Informações</a> | 
+            <a class="active" href=quizz.html>Quizz</a> | 
+            <a href=comentarios.html>Comentários</a> | 
+            <a href=html5-css.html>HTML5 e CSS</a> |
+            <a href=../index.html>Home</a>
+        </nav>
+
+        <main>
+            <h3>Quizz</h3>
+            <section id="textoesquerda">
+                <form method="post" action="mailto:leandrompp2001@gmail.com" oninput="taxaN.value = Q8.value">
+                    <section>
+                        <fieldset>
+                            <legend>Dados pessoais:</legend>
+                            <p><label for="nome">Nome: </label><input type="text" id="nome" name="nome" required autofocus></p>
+                            <p><label for="apelido">Apelido: </label><input type="text" id="apelido" name="apelido" required></p>
+                            <p><label for="email">Email: </label><input type="email" id="email" name="email" autocomplete="on" required></p>
+                        </fieldset>
+                    </section>
+                    <section>
+                        <fieldset>
+                            <legend>Quizz:</legend>
+
+                            <p><label for="Q1">1.Como se chama a cidade na língua Inglesa:</label><br>
+                            <input type="text" id="Q1" name="Q1" placeholder="Basileia" maxlength="10" size="7"></p><br>
+
+                            <p>2.Qual a lingua falada em Basileia?<br>
+                            <!--<input type="radio" name="gender" value="male">
+                                <label for="male">Male</label><br>-->
+                            <input type="radio" name="lingua" id="alemao" value="alemao">
+                            <label for="alemao">Alemão</label><br>
+                            <input type="radio" name="lingua" id="frances" value="frances">
+                            <label for="frances">Francês</label><br>
+                            <input type="radio" name="lingua" id="italiano" value="italiano">
+                            <label for="italiano">Italiano</label><br>
+                            <input type="radio" name="lingua" id="romanche" value="romanche"> 
+                            <label for="romanche">Romanche</label></p><br>
+
+                            <p>3.Com que paises Faz fronteira Basileia?<br>
+                            <!--<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>-->
+                            <input type="checkbox" id="portugal" name="portugal" value="portugal">
+                            <label for="portugal">Portugal</label><br>
+                            <input type="checkbox" id="franca" name="franca" value="franca">
+                            <label for="franca">França</label><br>
+                            <input type="checkbox" id="italia" name="italia" value="italia">
+                            <label for="italia">Itália</label><br>
+                            <input type="checkbox" id="alemanha" name="alemanha" value="alemanha">
+                            <label for="alemanha">Alemanha</label></p><br>
+
+                            <p><label for="Q4">4.Quando foi a inauguração do zoo de Basileia?</label><br>
+                            <input type="date" id="Q4" name="Q4"></p><br><!--3 julho 1874-->
+
+                            <p><label for="Q5">5.Qual a cor principal do brasão de armas de Basileia?</label><br>
+                            <input type="color" id="Q5" name="Q5" value="#ff0000"></p><br>
+
+                            <p><label for="Q6">6.Quantos habitantes têm Basileia</label><br>
+                            <input type="number" id="Q6" name="Q6" step="5"></p><br>
+
+                            <p><label for="Q7">7.Quais rios passam em Basileia</label><br>
+                            <select id="Q7" name="Q7" size="4" multiple>
+                                <option value="reno">Reno</option>
+                                <option value="sena">Sena</option>
+                                <option value="tejo">Tejo</option>
+                                <option value="wiese">Wiese</option>
+                            </select></p><br>
+
+                            <p>8.Quanto gostaria de ir a Basileia?<br>
+                            <input type="range" id="Q8" name="Q8" min="0" max="20">
+                            <output name="taxaN" for="Q8">10</output></p>
+
+                            <input type="image" src="images/submit.png" alt="Submit" width="120" height="40"><br>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </section>
+                </form>
+            </section>
+            <br>
+            <section>
+                <svg height="175" width="500">
+                    <a href=index.html>
+                        <text x="150" y="100" fill="#616161" class="index">
+                            <animate id="a1" attributeName="fill" from="#616161" to="#b8860b" dur="3s" fill="freeze"/>
+                            Introdução</text>
+                    </a>
+                    <a href=local.html>
+                        <text x="100" y="115" fill="#b8860b" class="localemultim">
+                            <animate id="a2" attributeName="fill" from="#b8860b" to="#3cb70b" begin="a1.end" dur="3s" fill="freeze" />
+                            Localização</text>
+                    </a>
+                    <a href=multimedia.html>
+                        <text x="175" y="70" fill="#3cb70b" class="localemultim">
+                            <animate id="a3" attributeName="fill" from="#3cb70b" to="#0b3cb7" begin="a2.end" dur="3s" fill="freeze" />
+                            Multimédia</text>
+                    </a>
+                    <a href=info.html>
+                    <text x="205" y="125" fill="#0b3cb7" class="info">
+                        <animate id="a4" attributeName="fill" from="#0b3cb7" to="#860bb7" begin="a3.end" dur="3s" fill="freeze" />
+                        Informações</text>
+                    </a>
+                    <a href=quizz.html>
+                    <text x="80" y="72" fill="#860bb7" class="quizz">
+                        <animate id="a5" attributeName="fill" from="#860bb7" to="#0bb786" begin="a4.end" dur="3s" fill="freeze" />
+                        Quizz</text>
+                    </a>
+                    <a href=comentarios.html>
+                    <text x="50" y="125" fill="#0bb786" class="big">
+                        <animate id="a6" attributeName="fill" from="#0bb786" to="#300bb7" begin="a5.end" dur="3s" fill="freeze" />
+                        Comentários</text>
+                    </a>
+                    <a href=../index.html>
+                    <text x="340" y="100" fill="#300bb7">
+                        <animate id="a7" attributeName="fill" from="#300bb7" to="#616161" begin="a6.end" dur="3s" fill="freeze" />
+                        Home
+                    </text>
+                    </a>
+                </svg>
+            </section>
+        </main>
+        <footer>
+            <p>Leandro Pinheiro a21904209 Universidade Lusófona de Humanidades e tecnologias 2ºano</p>
+        </footer>
+    </body>
+</html>
