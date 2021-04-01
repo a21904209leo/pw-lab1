@@ -23,12 +23,18 @@ body {
     height: 200px;
 }
 
-nav > a{
+nav a{
+    text-align: center;
     padding: 8px 16px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 nav > a:link{
+    color: black;
+}
+
+nav > a:visited{
     color: black;
 }
 
@@ -91,7 +97,36 @@ footer p::after {
     border-bottom: 2px solid #009879;
 }
 
+/*main{
+    float: left;
+    width: 70%;
+}*/
+
+.aside1{
+    float: right;
+    width: 100%;
+}
+
+footer{
+    font-size:1vw;
+}
 img{
     max-width:100%;
     height:auto;
+}
+
+@media screen and (max-width: 1000px) {
+    nav a {
+        float: left;
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .svgsubmenu{
+        width:0px;
+        height:0px;
+    }
 }
