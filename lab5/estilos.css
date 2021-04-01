@@ -115,6 +115,11 @@ img{
     height:auto;
 }
 
+iframe{
+    max-width:100%;
+    max-height: 100%;
+}
+
 @media screen and (max-width: 1000px) {
     nav a {
         float: left;
@@ -125,6 +130,11 @@ img{
 }
 
 @media screen and (max-width: 600px) {
+    
+    svg{
+        max-width: 100%;
+        height: auto;
+    }
     .svgsubmenu{
         width:0px;
         height:0px;
