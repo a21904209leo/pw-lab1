@@ -61,13 +61,6 @@ nav > a:hover::after{
     content: "\01F448";
 }
 
-footer p::before {
-    content: "\01F34B";
-}
-footer p::after {
-    content: "\01F98A";
-}
-
 .styled-table {
     border-collapse: collapse;
     margin: auto;
@@ -100,9 +93,25 @@ footer p::after {
 .aside1{
     float: right;
     width: 50%;
+    height: auto;
+}
+
+.aside2{
+    background-color: cornflowerblue;
+    text-align: left;
+    float: left;
+    width: 50%;
+    height: auto;
+    font-size: 1vw;
+    animation-name: muda-cor;
+    animation-duration: 4s;
 }
 
 footer{
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    width: 100%;
     font-size:1vw;
 }
 img{
@@ -129,6 +138,16 @@ img{
 iframe{
     max-width:100%;
     max-height: 100%;
+}
+
+.apear,
+.new-menu{
+    font-size: 0vw;
+}
+
+@keyframes muda-cor {
+    from {background-color: yellowgreen;}
+    to {background-color: cornflowerblue;}
 }
 
 @media screen and (max-width: 1000px) {
@@ -158,4 +177,34 @@ iframe{
         padding: 0px 0px;
     }
 
+    .vanish{
+        font-size: 0vw;
+    }
+    
+    .apear {
+        text-align: left;
+        font: 20px sans-serif;
+    }
+
+    .apear a,
+    .new-menu a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .apear a::before{
+        content: "\1F7E2";
+    }
+
+    .new-menu{
+        text-align: center;
+        background-color: cornflowerblue;
+        font: 20px sans-serif;
+    }
+
+    .aside1,
+    .aside2{
+        width: 100%;
+        height: auto;
+    }
 }
